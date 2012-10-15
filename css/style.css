@@ -7,7 +7,45 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body,textarea,input{
 	font:15px/1.4em Arial, Helvetica, sans-serif;
 }
+textarea{
+	resize:none;
+}
+h1{
+	font: 45px/20px monospace;
+	font-weight: bold;
+	padding:10px 0 0;
+	display:inline-block;
+	width: 200px;
+	text-align:center;
+}
+h1 span{
+	font-size: 13px;
+	line-height:19px;
 
+	display:inline-block;
+}
+h4{
+	font-size: 10px;
+	line-height: 12px;
+}
+.btn{
+	display: inline-block;
+	padding:0 10px;
+	background:#999;
+	border:solid 1px #FFF;
+	line-height: 25px;
+	color:#FFF;
+	text-decoration:none;
+	
+	border-radius:5px;
+	box-shadow:0 1px 3px rgba(0,0,0,.3);
+}
+.btn:hover{
+	background:#AAA;
+}
+.btn:active{
+	background:#666;
+}
 /* Layout */
 
 #toolbar,
@@ -30,8 +68,8 @@ body,textarea,input{
 
 #copy-area{
 	top:60px;left:0;bottom:15px;
-	
-	width:400px;
+	padding:20px;
+	width:360px;
 }
 
 #div-ctrl{
@@ -41,6 +79,7 @@ body,textarea,input{
 	background: #EEE;
 	border-left: solid 1px #CCC;
 	border-right: solid 1px #CCC;
+	cursor: w-resize;
 }
 #write-area{
 	top:60px;left:410px;bottom:15px;
@@ -60,8 +99,66 @@ body,textarea,input{
 	left:1%;
 	right:1%;
 	overflow-y: scroll;
-	resize:none;
 	width: 98%;
 	height: 96%;
-	hborder:none;
+	border:none;
 }
+
+/* TOOLBAR*/
+.col{
+	float:left;
+	padding: 0 30px;
+	height:59px;
+	border-right: dotted 1px #CCC;
+}
+label{
+	display: block;
+}
+#enter-text-copy{
+	height:20px;
+	width:150px;
+}
+.btn-ok{
+	position:relative;
+	top:-5px;left:5px;
+}
+
+.btn-record,
+.btn-reset{
+	margin-top:15px;
+}
+.btn-record{
+	background:#290;
+}
+.btn-recording{
+	background:#920;
+}
+
+#wpm{
+	background: #FFF;
+	color:#290;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	line-height:38px;
+	border:solid 1px #CCC;
+	width:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

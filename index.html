@@ -13,8 +13,28 @@
 
 </head>
 <body>
-	<div id="toolbar"></div>
-	<div id="copy-area"></div>
+	<div id="toolbar">
+		<div class="col">
+			<h1>Mecano
+				<span>to practice your speed</span>
+			</h1>
+		</div>
+		<div class="col">
+			<label>Enter text to copy:</label>
+			<textarea id="enter-text-copy" val="" placeholder="Paste here..."></textarea><a href="javascript:void(0)" class="btn btn-ok">ok</a>
+		</div>
+		<div class="col">
+			<a href="" class="btn btn-record"><span class="icon"></span>Record</a>
+		</div>
+		<div class="col">
+			<h4>Words per minute:</h4>
+			<div id="wpm">0</div>
+		</div>
+		<div class="col">
+			<a href="" class="btn btn-reset"><span class="icon"></span>Reset</a>
+		</div>
+	</div>
+	<div id="copy-area">Text to copy</div>
 	<div id="div-ctrl"><input type="hidden" val=""/></div>
 	<div id="write-area">
 		<textarea id="write-input" val="" placeholder="Write here..."></textarea>

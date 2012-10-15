@@ -20,8 +20,12 @@
 			</h1>
 		</div>
 		<div class="col">
-			<label>Enter text to copy:</label>
-			<textarea id="enter-text-copy" val="" placeholder="Paste here..."></textarea><a href="javascript:void(0)" class="btn btn-ok">ok</a>
+			<h3>Enter to copy:</h3>
+			<label>Text:</label>
+			<textarea id="enter-text-copy"  class="enter-text-copy" val="" placeholder="Paste text here..."></textarea><br>
+			<label>Url:</label>
+			<input id="enter-url-copy" class="enter-text-copy" val="" placeholder="Paste url here..."></input>
+			
 		</div>
 		<div class="col">
 			<a href="" class="btn btn-record"><span class="icon"></span>Record</a>
@@ -33,8 +37,13 @@
 		<div class="col">
 			<a href="" class="btn btn-reset"><span class="icon"></span>Reset</a>
 		</div>
+		<div class="results">
+		</div>
 	</div>
-	<div id="copy-area">Text to copy</div>
+	<div id="copy-area">
+		<div id="copy-text">Text to copy</div>
+		<iframe id="copy-iframe" src=""></iframe>	
+	</div>
 	<div id="div-ctrl"><input type="hidden" val=""/></div>
 	<div id="write-area">
 		<textarea id="write-input" val="" placeholder="Write here..."></textarea>
